@@ -1,0 +1,83 @@
+.checkbox-swamp{
+  height: 100vh;
+  background: linear-gradient(to top, #1D1D1D, #292929);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box!important;
+  background: #08043f;
+  transition: .3s;
+  &.transitionNone{
+    transition: none;
+  }
+  .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &.lite{
+    background: #ffffff;
+  }
+}
+.checkbox{
+  display: none;
+}
+.checkbox-label{
+  position: relative;
+  display: block;
+  background: #000;
+  width: 500px;
+  height: 220px;
+  border-radius: 1000px;
+  border: 20px solid #363635;
+  background: linear-gradient(to top, #282828, #010101);
+  cursor: pointer;
+  box-sizing: border-box!important;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 180px;
+    background: #000;
+    border-radius: 1000px;
+    border: 4px solid #202228;
+    background: linear-gradient(to top, #030303, #686868);
+    right: 0;
+    top: 0;
+    transition: .4s;
+    box-sizing: border-box!important;
+  }
+  &.transitionNone{
+    &::before{
+      transition: 0s;
+    }
+    &::after{
+      transition: none;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    background: linear-gradient(to top, #60605F, #0B0B0B);
+    transition: .4s;
+  }
+  &.active{
+    background: linear-gradient(to top, #5AB5E1, #249DDC);
+    box-shadow: inset 4px 4px 25px 12px #145A80;
+    &::before{
+      transform: translateX(-130px);
+    }
+    &::after{
+      transform: translate(-130px, -50%);
+      background: #64CBFF;
+      box-shadow: 3px 3px 27px #64CBFF, -3px -3px 27px #64CBFF, 3px 3px 27px #64CBFF, 3px 3px 27px #64CBFF;
+    }
+  }
+}
+// #19587a

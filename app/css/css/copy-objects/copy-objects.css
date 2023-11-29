@@ -1,0 +1,10 @@
+body {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  background: #43d1a2;
+}

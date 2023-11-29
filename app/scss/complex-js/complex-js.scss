@@ -1,0 +1,151 @@
+.complex-js-body{
+  background: #fff;
+  position: relative;
+  .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    transition: all .3s;
+    a{
+      color: #000;
+    }
+    &:hover{
+      background: rgba(#000000, 0.3);
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.complex-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  font-weight: bold;
+  font-size: 55px;
+  text-decoration: none;
+  transition: all .3s;
+}
+.this{
+  color: #fff;
+  font-size: 90px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  background-color: rgb(247, 20, 109);
+  &:hover{
+    color: rgb(234, 241, 245);
+    background-color: rgb(0, 218, 218);
+    transform: perspective(400px) rotateY(30deg);
+  }
+}
+.closures{
+  color: #0af6cc;
+  background-color: rgb(236, 241, 4);
+  &:hover{
+    background-color: rgb(65, 247, 20);
+    color: #fff;
+    // transform: perspective(400px) rotateY(30deg);
+    transform: rotateZ(360deg);
+  }
+}
+.async{
+  background: #1a9bed;
+  font-size: 80px;
+  color: #ffffff;
+  transition: all .5s;
+  &:hover{
+    background: #6a10db;
+    transform: perspective(400px) translateZ(100px) rotateX(360deg);
+    z-index: 2;
+  }
+}
+.promise{
+  position: relative;
+  background: #13e307;
+  font-size: 70px;
+  color: #ffffff;
+  transition: all .5s;
+  overflow: hidden;
+  p{
+    z-index: 1;
+    transition: all .8s;
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #f53c0a;
+    transition: all .3s;
+  }
+  &:hover::before{
+    width: 500px;
+    height: 500px;
+  }
+  &:hover p{
+    transform: rotateY(360deg);
+  }
+}
+.object-create{
+  background: #0af6cc;
+  font-size: 40px;
+  color: #ffffff;
+  transition: all .5s;
+  &:hover{
+    background: #f00808;
+    color: #fff;
+    z-index: 2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

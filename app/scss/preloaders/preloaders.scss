@@ -1,0 +1,118 @@
+.preloaders-body{
+  background: transparent;
+}
+.preloader-item{
+  height: 300px;
+  border: 1px solid #ff8888;
+  border-left: 0;
+  border-right: 0;
+}
+.circle-of-balls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__ball{
+    width: 30px;
+    height: 30px;
+    background: #c1e6d6;
+    border-radius: 50%;
+    position: absolute;
+    &-1{
+      transform: rotate(36deg) translateY(-60px) rotate(-36deg);
+    }
+    &-2{
+      transform: rotate(72deg) translateY(-60px) rotate(-72deg);
+    }
+    &-3{
+      transform: rotate(108deg) translateY(-60px) rotate(-108deg);
+    }
+    &-4{
+      transform: rotate(144deg) translateY(-60px) rotate(-144deg);
+    }
+    &-5{
+      transform: rotate(180deg) translateY(-60px) rotate(-180deg);
+    }
+    &-6{
+      transform: rotate(216deg) translateY(-60px) rotate(-216deg);
+    }
+    &-7{
+      transform: rotate(252deg) translateY(-60px) rotate(-252deg);
+    }
+    &-8{
+      transform: rotate(288deg) translateY(-60px) rotate(-288deg);
+    }
+    &-9{
+      transform: rotate(324deg) translateY(-60px) rotate(-324deg);
+    }
+    &-10{
+      transform: rotate(360deg) translateY(-60px) rotate(-360deg);
+    }
+  }
+}
+.ball-active{
+  opacity: .5;
+}
+.circle-gradient{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #04d6d0, #02fa14, #bfd604, #d62404);
+    position: relative;
+    animation: circle-gradient 1s linear infinite;
+  }
+  &__inner{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background: #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @keyframes circle-gradient {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+}
+.shadow-gradient{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px -8px 3px #e90d0d, 8px 0px 3px #0ac7f1, 0px 8px 3px #16bd13, -8px 0px 3px #e9cd0d;
+    // box-shadow:  7px 0px 3px #0ac7f1;
+    // box-shadow: 0px -7px 3px #e90d0d;
+    // box-shadow: 0px 7px 3px #16bd13;
+    // box-shadow: -7px 0px 3px #e9cd0d;
+    animation: circle-shadow 1s linear infinite;
+  }
+  @keyframes circle-shadow {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+}
